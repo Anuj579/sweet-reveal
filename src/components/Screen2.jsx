@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { ArrowRight, MoveRight } from "lucide-react"
 
 export default function Screen2({ onNext }) {
     return (
@@ -9,7 +10,7 @@ export default function Screen2({ onNext }) {
             animate={{ opacity: 1 }}
             transition={{ ease: "easeOut" }}
             exit={{ opacity: 0 }}
-            className="min-h-screen bg-gradient-to-tr from-purple-950/80 via-black to-pink-950/70 flex flex-col items-center justify-center p-8 relative overflow-hidden gap-8">
+            className="min-h-screen flex flex-col items-center justify-center p-8 relative overflow-hidden gap-8">
 
             {/* GIF */}
             <motion.div
@@ -47,9 +48,9 @@ export default function Screen2({ onNext }) {
             >
                 <button
                     onClick={onNext}
-                    className="bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white font-semibold py-4 px-12 rounded-full text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-500/30"
+                    className="bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white font-semibold py-4 px-12 rounded-full text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-500/30  flex items-center gap-2"
                 >
-                    Show Me 💖
+                    Show Me <MoveRight size={22} className="mb-0.5" />
                 </button>
             </motion.div>
         </motion.div>

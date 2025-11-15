@@ -66,7 +66,7 @@ export default function LyricsScreen() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeOut" }}
-            className="min-h-screen bg-gradient-to-tr from-pink-950/80 via-black to-purple-950/80 flex items-center justify-center p-6 relative overflow-hidden">
+            className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden">
 
             {/* Floating elements */}
             <div className="fixed inset-0 pointer-events-none ">
@@ -119,7 +119,8 @@ export default function LyricsScreen() {
                             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-wide will-change-transform"
                             style={{
                                 textShadow:
-                                    "0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 192, 203, 0.3)",
+                                    "0 0 20px rgba(255,255,255,0.35), 0 0 40px rgba(255,192,203,0.25)"
+
                             }}
                         >
                             {lyrics[currentLyric]}
@@ -134,7 +135,7 @@ export default function LyricsScreen() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, ease: "easeInOut" }}
-                    className="absolute inset-0 flex flex-col gap-5 items-center justify-center pointer-events-none "
+                    className="absolute inset-0 flex flex-col gap-6 items-center justify-center pointer-events-none "
                 >
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}

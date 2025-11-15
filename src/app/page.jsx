@@ -12,7 +12,7 @@ export default function Home() {
   const [musicStarted, setMusicStarted] = useState(false)
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black bg-gradient-to-tr from-purple-950/80 via-black to-pink-950/70">
 
       <AnimatePresence mode="wait">
         {currentScreen === 1 && <Screen1 key="screen1" onNext={() => setCurrentScreen(2)} />}
