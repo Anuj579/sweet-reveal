@@ -19,7 +19,7 @@ export default function Screen1({ onNext }) {
                 transition={{ duration: 1, delay: 0.5 }}
                 className="flex items-center justify-center"
             >
-                <img src="/gifs/1.gif" className="w-40" alt="waving" />
+                <img loading="lazy" src="/gifs/1.gif" className="w-40" alt="waving" />
             </motion.div>
 
             {/* Center text */}

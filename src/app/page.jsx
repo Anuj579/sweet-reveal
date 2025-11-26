@@ -23,7 +23,7 @@ export default function Home() {
         {currentScreen === 3 && <LyricsScreen key="screen3" />}
       </AnimatePresence>
 
-      <Music shouldPlay={musicStarted} />
+      {musicStarted && <Music shouldPlay={musicStarted} />}
 
       {/* Watermark */}
       <motion.div
