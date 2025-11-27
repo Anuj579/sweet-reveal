@@ -1,0 +1,11 @@
+# Clone the repository
+git clone https://github.com/Anuj579/sweet-reveal.git
+
+# Navigate into the folder
+cd sweet-reveal
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
